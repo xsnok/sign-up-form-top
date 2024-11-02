@@ -5,6 +5,8 @@
     font-size: 8px;
     background-color: whitesmoke;
     box-sizing: border-box;
+    --padding-from-image: 2rem;
+    --button-color: #00021F;
 }
 
 body {
@@ -12,18 +14,33 @@ body {
     padding: 0;
 }
 
+#form-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-from-image);
+    gap: 1.5rem 0;
+}
+
 .title-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .form-title-text {
     font-size: 2rem;
 }
 
-#sign-up {
+#form-box {
     background-color: white;
-    box-shadow: 0 0 5px black;
-    padding: 3rem;
+    box-shadow: 0 0 5px gray;
+    padding: var(--padding-from-image);
 }
 
 #inputs {
@@ -31,14 +48,28 @@ body {
     gap: 20px;
 }
 
+#inputs {
+    margin: 1rem 0;
+}
+
 #left-inputs,
 #right-inputs {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 1rem;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
+}
+
+#submit {
+    padding: 1.5rem 5rem;
+    margin: var(--padding-from-image);
+    border-style: none;
+    border-radius: 1.5rem;
+    background-color: var(--button-color);
+    color: white;
+    font-weight: 500;
 }
