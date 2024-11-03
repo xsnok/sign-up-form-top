@@ -21,7 +21,7 @@
                 <div class="title-text">This is a service to sign up to this <em>amazing</em> website!</div>    
             </div>
         
-            <form action="post" id="sign-up">
+            <form action="#" id="sign-up">
                 <div id="form-box">
                     <div class="form-title-text">Lets do this</div>
                     <div id="inputs">
@@ -50,7 +50,10 @@
                 
                             <div class="input-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" name="phone">
+                                <input type="tel" name="phone" id="phone" 
+                                pattern="^\+?[0-9\s\-\(\)]{7,15}$" 
+                                maxlength="15"
+                                placeholder="+123 456 7890">
                             </div>
                 
                             <div class="input-group">
